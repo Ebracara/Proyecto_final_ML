@@ -20,43 +20,43 @@ Este proyecto utiliza técnicas de Machine Learning para anticipar si una queja 
 - Interfaz interactiva con Streamlit
 
 ## Estructura del Proyecto
-ustomer_complaints_ml/
-├── 📁 notebooks/                    # Jupyter Notebooks del proceso completo
-│   ├── 01_Fuentes.ipynb            # Adquisición y exploración de datos
-│   ├── 02_LimpiezaEDA.ipynb         # Limpieza y análisis exploratorio
+PROYECTO_FINAL_ML/
+├── 📁 notebooks/                  # Jupyter Notebooks del proceso completo
+│   ├── 01_Fuentes.ipynb          # Adquisición y exploración de datos
+│   ├── 02_LimpiezaEDA.ipynb      # Limpieza y análisis exploratorio
 │   ├── 03_Entrenamiento_Evaluacion.ipynb  # Modelado y evaluación
-│   └── 04_Evaluacion.ipynb          # Validación final y métricas
+│   └── 04_Evaluacion.ipynb       # Validación final y métricas
 │
-├── 📁 src/                          # Código fuente modularizado
-│   ├── preprocessing.py             # Pipeline de preprocesamiento
-│   ├── training.py                  # Entrenamiento de modelos
-│   ├── evaluation.py                # Evaluación e interpretabilidad
-│   ├── model_storage.py             # Gestión de modelos entrenados
-│   └── utils.py                     # Utilidades generales
+├── 📁 src/                       # Código fuente modularizado
+│   ├── preprocessing.py          # Pipeline de preprocesamiento
+│   ├── training.py               # Entrenamiento de modelos
+│   ├── evaluation.py             # Evaluación e interpretabilidad
+│   ├── model_storage.py          # Gestión de modelos entrenados
+│   └── utils.py                  # Utilidades generales
 │
-├── 📁 models/                       # Modelos entrenados y configuraciones
-│   ├── trained_model_1.pkl          # Modelos experimentales
-│   ├── trained_model_2.pkl          
-│   ├── final_model.pkl              # Modelo final para producción
-│   ├── model_config.yaml            # Configuración del modelo
-│   └── model_metadata.json          # Metadatos y métricas
+├── 📁 models/                    # Modelos entrenados y configuraciones
+│   ├── trained_model_1.pkl       # Modelos experimentales
+│   ├── trained_model_2.pkl
+│   ├── final_model.pkl           # Modelo final para producción
+│   ├── model_config.yaml         # Configuración del modelo
+│   └── model_metadata.json       # Metadatos y métricas
 │
-├── 📁 app/                          # Aplicación web interactiva
-│   ├── app.py                       # Aplicación principal Streamlit
-│   ├── requirements.txt             # Dependencias de la app
-│   └── pages/                       # Páginas adicionales
+├── 📁 app/                       # Aplicación web interactiva
+│   ├── app.py                    # Aplicación principal Streamlit
+│   ├── requirements.txt          # Dependencias de la app
+│   └── 📁 pages/                  # Páginas adicionales
 │
-├── 📁 data/                         # Datos del proyecto
-│   ├── raw/                         # Datos originales
-│   ├── processed/                   # Datos procesados
-│   └── external/                    # Datos externos
+├── 📁 data/                      # Datos del proyecto
+│   ├── 📁 raw/                   # Datos originales
+│   ├── 📁 processed/             # Datos procesados
+│   └── 📁 external/              # Datos externos
 │
-├── 📁 docs/                         # Documentación del proyecto
-│   ├── negocio.ppt                  # Presentación ejecutiva
-│   ├── ds.ppt                       # Presentación técnica
-│   ├
-├── requirements.txt                 # Dependencias del proyecto
-└── README.md                        # Este archivo
+├── 📁 docs/                      # Documentación del proyecto
+│   ├── negocio.ppt               # Presentación ejecutiva
+│   ├── ds.ppt                    # Presentación técnica
+│
+├── requirements.txt              # Dependencias del proyecto
+└── README.md                     # Descripción general del proyecto
 
 ## Tecnologías utilizadas
 - Python 3.11
@@ -81,4 +81,5 @@ Data Scientist | Santander, España
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+
 
