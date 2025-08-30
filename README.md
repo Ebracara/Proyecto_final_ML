@@ -20,12 +20,13 @@ Este proyecto utiliza técnicas de Machine Learning para anticipar si una queja 
 - Interfaz interactiva con Streamlit
 
 ## Estructura del Proyecto
+```plaintext
 PROYECTO_FINAL_ML/
-├── 📁 notebooks/                  # Jupyter Notebooks del proceso completo
-│   ├── 01_Fuentes.ipynb          # Adquisición y exploración de datos
-│   ├── 02_LimpiezaEDA.ipynb      # Limpieza y análisis exploratorio
+├── 📁 notebooks/                          # Jupyter Notebooks del proceso completo
+│   ├── 01_Fuentes.ipynb                   # Adquisición y exploración de datos
+│   ├── 02_LimpiezaEDA.ipynb               # Limpieza y análisis exploratorio
 │   ├── 03_Entrenamiento_Evaluacion.ipynb  # Modelado y evaluación
-│   └── 04_Evaluacion.ipynb       # Validación final y métricas
+│   └── 04_Evaluacion.ipynb                # Validación final y métricas
 │
 ├── 📁 src/                       # Código fuente modularizado
 │   ├── preprocessing.py          # Pipeline de preprocesamiento
@@ -81,5 +82,6 @@ Data Scientist | Santander, España
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+
 
 
