@@ -47,7 +47,7 @@ PROYECTO_FINAL_ML/
 │  
 ├── requirements.txt                 # Dependencias del proyecto
 └── README.md                        # Este archivo
-
+```
 ## Tecnologías utilizadas
 - Python 3.11
 - pandas, scikit-learn, seaborn, matplotlib
@@ -71,6 +71,7 @@ Data Scientist | Santander, España
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+
 
 
 
