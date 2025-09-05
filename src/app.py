@@ -42,9 +42,9 @@ with tab1:
             X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
             modelos = entrenar_modelos(X_train, y_train, columnas_modelo)
 
-            joblib.dump(modelos["Random Forest"], "../models/modelo_random_forest.pkl")
-            joblib.dump(columnas_modelo, "../models/columnas_modelo.pkl")
-            joblib.dump(scaler, "../models/scaler.pkl")
+            joblib.dump(modelos["Random Forest"], "models/modelo_random_forest.pkl")
+            joblib.dump(columnas_modelo, "models/columnas_modelo.pkl")
+            joblib.dump(scaler, "models/scaler.pkl")
 
             st.success("Modelo entrenado y guardado")
 
@@ -60,9 +60,9 @@ with tab2:
         df = pd.read_csv(archivo_pred)
         df = limpiar_datos(df)
 
-        modelo = joblib.load("../models/modelo_random_forest.pkl")
-        columnas_entrenadas = joblib.load("../models/columnas_modelo.pkl")
-        scaler = joblib.load("../models/scaler.pkl")
+        modelo = joblib.load("models/modelo_random_forest.pkl")
+        columnas_entrenadas = joblib.load("models/columnas_modelo.pkl")
+        scaler = joblib.load("models/scaler.pkl")
 
         X_pred = pd.get_dummies(df.drop(columns=["Consumer disputed?", "Disputa"], errors="ignore"), drop_first=True)
         X_pred = X_pred.reindex(columns=columnas_entrenadas, fill_value=0)
@@ -100,9 +100,9 @@ with tab2:
 with tab3:
     st.subheader("Formulario de Predicción Manual")
 
-    modelo = joblib.load("../models/modelo_random_forest.pkl")
-    scaler = joblib.load("../models/scaler.pkl")
-    columnas_modelo = joblib.load("../models/columnas_modelo.pkl")
+    modelo = joblib.load("models/modelo_random_forest.pkl")
+    scaler = joblib.load("models/scaler.pkl")
+    columnas_modelo = joblib.load("models/columnas_modelo.pkl")
 
     producto = st.selectbox("Producto", ["credit card", "mortgage", "loan", "unknown"])
     estado = st.selectbox("Estado", ["ca", "tx", "ny", "unknown"])
@@ -129,4 +129,5 @@ with tab3:
         if pred == 1:
             st.success("Es probable que haya una disputa")
         else:
+
             st.info("No se espera disputa")
