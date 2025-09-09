@@ -7,9 +7,6 @@ from data_processing import limpiar_datos, preprocesar_para_modelo
 from training import entrenar_modelos, evaluar_modelo_streamlit
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from fastapi import FastAPI
-
-app = FastAPI()
 
 st.set_page_config(page_title="Predicción de Disputas", layout="centered")
 st.title("Predicción y Entrenamiento de Disputas de Clientes")
@@ -131,4 +128,5 @@ with tab3:
         if pred == 1:
             st.success("Es probable que haya una disputa")
         else:
+
             st.info("No se espera disputa")
